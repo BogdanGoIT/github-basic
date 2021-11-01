@@ -1,2 +1,15 @@
-body {
+.test-link {
+  color: black;
+}
+
+/* 0-255 */
+
+.test-link:hover,
+.test-link:focus {
+  /* color: rgb(255, 0, 0); */
+  color: #ff0000;
+}
+
+.test-link:active {
+  color: teal;
 }
