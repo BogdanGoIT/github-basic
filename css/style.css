@@ -36,7 +36,12 @@ body {
   color: #000000;
 }
 
-/* section */
+/* Hero */
+.hero-title {
+  color: #000000;
+}
+
+/* Section */
 
 .section-title {
   color: #000000;
@@ -44,4 +49,13 @@ body {
 
 .clients > .section-title {
   color: teal;
+}
+
+/* Feature */
+.feature-list .title {
+  color: #000000;
+}
+
+.feature-list .link {
+  color: #18a0fb;
 }
