@@ -11,11 +11,12 @@
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
-  --acent-color: orange;
+  --acent-color: #18a0fb;
+  --primary-white-color: #ffffff;
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 }
 
@@ -62,6 +63,25 @@ body {
   color: var(--title-text-color);
 }
 
-.feature-list .link {
+/* Examples */
+
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+}
+
+.button.secondary {
   color: var(--acent-color);
+  background-color: var(--primary-white-color);
 }
