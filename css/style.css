@@ -43,6 +43,10 @@ body {
   color: var(--title-text-color);
 }
 
+.site-nav .link.current {
+  color: var(--title-text-color);
+}
+
 /* Hero */
 .hero-title {
   color: var(--title-text-color);
