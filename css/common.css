@@ -20,10 +20,16 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
+
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0, 015em;
 }
+
+/* Logo */
 
 .logo {
   color: var(--title-text-color);
+  font-family: Comfortaa, cursive;
 }
 
 .logo:hover {
