@@ -1,0 +1,57 @@
+/* цвет основного текста rgba(0, 0, 0, 0.8) */
+
+/* вторичный цвет  текста #000000 */
+
+/* белый #ffffff */
+
+/* акцент #18A0fb */
+
+/* вторичный цвет фона #f5f5f5 */
+
+.list {
+  list-style: none;
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--title-text-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.clients > .section-title {
+  color: teal;
+}
+
+/* Feature */
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/* Examples */
+
+.work-list .title {
+  color: var(--title-text-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+}
+
+.button.secondary {
+  color: var(--acent-color);
+  background-color: var(--primary-white-color);
+}

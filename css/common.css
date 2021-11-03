@@ -8,6 +8,8 @@
 
 /* вторичный цвет фона #f5f5f5 */
 
+/* Стили для index.html */
+
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #000000;
@@ -18,10 +20,6 @@
 body {
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
-}
-
-.list {
-  list-style: none;
 }
 
 .logo {
@@ -45,47 +43,4 @@ body {
 
 .site-nav .link.current {
   color: var(--title-text-color);
-}
-
-/* Hero */
-.hero-title {
-  color: var(--title-text-color);
-}
-
-/* Section */
-
-.section-title {
-  color: var(--title-text-color);
-}
-
-.clients > .section-title {
-  color: teal;
-}
-
-/* Feature */
-.feature-list .title {
-  color: var(--title-text-color);
-}
-
-/* Examples */
-
-.work-list .title {
-  color: var(--title-text-color);
-}
-
-/* Button */
-
-.button {
-  color: var(--title-text-color);
-  background-color: var(--primary-white-color);
-}
-
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--acent-color);
-}
-
-.button.secondary {
-  color: var(--acent-color);
-  background-color: var(--primary-white-color);
 }
