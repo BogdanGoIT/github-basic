@@ -22,7 +22,9 @@ body {
   color: var(--primary-text-color);
 
   font-family: Montserrat, sans-serif;
-  letter-spacing: 0, 015em;
+  letter-spacing: -0.015em;
+  font-size: 18px;
+  line-height: 1.67;
 }
 
 /* Logo */
@@ -30,6 +32,10 @@ body {
 .logo {
   color: var(--title-text-color);
   font-family: Comfortaa, cursive;
+
+  font-size: 28px;
+  line-height: 1.4;
+  text-decoration: none;
 }
 
 .logo:hover {
@@ -40,6 +46,11 @@ body {
 
 .site-nav .link {
   color: var(--acent-color);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
