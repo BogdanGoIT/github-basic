@@ -1,5 +1,7 @@
 .box {
-  border: 5px solid tomato;
+  /* border: 5px solid tomato;
   padding: 20px;
-  margin: 20px;
+  margin: 20px; */
+  outline: 2px solid tomato;
+  margin-bottom: 40px;
 }
