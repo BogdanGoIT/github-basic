@@ -9,7 +9,6 @@ html {
 }
 
 .btn {
-  width: 200px;
   display: inline-block;
   padding: 20px 40px;
   background-color: tomato;
@@ -23,4 +22,10 @@ html {
 .btn:focus {
   background-color: black;
   border-color: tomato;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  background-color: skyblue;
 }
