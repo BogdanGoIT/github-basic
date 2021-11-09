@@ -27,5 +27,8 @@ html {
 .btn-icon {
   width: 20px;
   height: 20px;
-  background-color: skyblue;
+  background-color: blue;
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: middle;
 }
