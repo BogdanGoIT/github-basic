@@ -8,13 +8,30 @@
 
 /* вторичный цвет фона #f5f5f5 */
 
+.container {
+  width: 1200px;
+  outline: 2px solid tomato;
+  margin: 0 auto;
+}
+
+/* Page-header */
+.page-header {
+  background-color: #ccc;
+}
+
 .list {
   list-style: none;
 }
 
 /* Hero */
 
+.hero {
+  outline: 1px solid tomato;
+}
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-text-color);
 
   font-weight: 400;
@@ -58,6 +75,12 @@
 }
 
 .button {
+  display: inline-block;
+  min-width: 130px;
+  padding: 11px 34px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
 
@@ -65,6 +88,7 @@
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
+  text-align: center;
 }
 
 .button.primary {
@@ -75,4 +99,5 @@
 .button.secondary {
   color: var(--acent-color);
   background-color: var(--primary-white-color);
+  border-color: var(--acent-color);
 }
