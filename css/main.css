@@ -12,12 +12,11 @@
   width: 1200px;
   outline: 2px solid tomato;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /* Page-header */
-.page-header {
-  background-color: #ccc;
-}
 
 .list {
   list-style: none;
@@ -44,7 +43,7 @@
 
 /* Section */
 .section {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -67,6 +66,8 @@
 }
 
 .section-description {
+  margin-top: 0;
+  margin-bottom: 80px;
   font-size: 36px;
   line-height: 1.39;
 }
