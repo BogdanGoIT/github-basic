@@ -43,16 +43,23 @@
 }
 
 /* Section */
+.section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
 
 .section-title {
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 60px;
-  background-color: tomato;
 
   font-weight: 400;
   font-size: 48px;
   line-height: 1.5;
+}
+
+.section-title.centered {
+  text-align: center;
 }
 
 .clients > .section-title {
@@ -81,9 +88,7 @@
   margin-bottom: 32px;
 }
 
-.works {
-  background-color: tomato;
-}
+/* Примеры работ work */
 
 .button {
   display: inline-block;
