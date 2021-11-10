@@ -90,6 +90,24 @@
 
 /* Примеры работ work */
 
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.work-list > .item {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--primary-white-color);
+}
+
+/* Красим ченые элименты */
+.work-list > .item:nth-child(2n) {
+  background-color: var(--secondary-bg-color);
+}
+
+/* Button */
+
 .button {
   display: inline-block;
   min-width: 130px;
