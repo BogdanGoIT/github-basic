@@ -51,12 +51,11 @@ body {
 
 .site-nav .item {
   background-color: tomato;
-  margin-right: 40px;
 }
 
-/* Убираем правый отступ в последнего элимента */
-.site-nav .item:last-child {
-  margin-right: 0;
+/* Всем элиментам с классом item который внутри site-nav и не являеться последними детьми в своей коллекции */
+.site-nav .item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .site-nav .link {
