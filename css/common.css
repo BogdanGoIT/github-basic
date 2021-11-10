@@ -28,6 +28,30 @@ body {
   line-height: 1.67;
 }
 
+/* Утилиты */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Page-header */
+
+.container {
+  width: 1200px;
+  outline: 2px solid tomato;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Main-nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 /* Logo */
 
 .logo {
@@ -47,10 +71,7 @@ body {
 
 .site-nav {
   display: flex;
-}
-
-.site-nav .item {
-  background-color: tomato;
+  margin-left: 70px;
 }
 
 /* Всем элиментам с классом item который внутри site-nav и не являеться последними детьми в своей коллекции 
@@ -65,12 +86,25 @@ body {
 }
 
 .site-nav .link {
-  color: var(--acent-color);
+  display: block;
+  padding-top: 21px;
+  padding-bottom: 21px;
 
+  color: var(--acent-color);
   font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
   text-decoration: none;
+}
+
+/* Auth nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav .item + .item {
+  margin-left: 12px;
 }
 
 .site-nav .link:hover,
