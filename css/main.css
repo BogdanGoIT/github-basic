@@ -57,14 +57,18 @@
 }
 
 /* Feature Examples*/
+
+/* 1160 - 150 = 1010 / 2*/
 .feature-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -40px -75px;
 }
 
 .feature-list .item {
-  width: 300px;
+  width: 505px;
   background-color: tomato;
+  margin: 40px 75px;
 }
 
 .feature-list .title,
