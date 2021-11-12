@@ -144,24 +144,25 @@
   display: flex;
   flex-wrap: wrap;
   background-color: teal;
+  margin: -15px;
 }
 
 /* calc((100% - кол-во маржинов в строке(-1) * значение маржина) / на кол-во элиментов в строке) */
 
 /* calc((100% - 49 * 30px) / 50) */
 .flex-element {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  /* width: 380px; */
+  /* width: calc((100% - 60px) / 3); */
+  margin: 15px;
+  /* margin-right: 30px; */
+  width: 380px;
   background-color: tomato;
-  /* margin-right: 30px;
-  margin-bottom: 30px; */
+  /* margin-bottom: 30px; */
 }
 
 /* Убрать правый отступ у 3-го элимента */
-.flex-element:nth-child(3n) {
+/* .flex-element:nth-child(3n) {
   margin-right: 0;
-}
+} */
 
 /* Убрать нижний отступ последни 3-м  */
 /* .flex-element:nth-last-child(-n + 3) {
