@@ -41,7 +41,8 @@
   line-height: 1.5;
 }
 
-.section-title.centered {
+.section-title.centered,
+.section-description.centered {
   text-align: center;
 }
 
@@ -119,6 +120,19 @@
   flex-direction: row-reverse;
 }
 
+/* Client list*/
+.client-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1020px;
+  margin: -30px -45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-list li {
+  margin: 30px 45px;
+}
 /* Button */
 
 .button {
