@@ -146,23 +146,34 @@
   background-color: teal;
 }
 
-/* 3 элемента в строку */
+/* calc((100% - кол-во маржинов в строке(-1) * значение маржина) / на кол-во элиментов в строке) */
+
+/* calc((100% - 49 * 30px) / 50) */
 .flex-element {
-  width: 380px;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  /* width: 380px; */
   background-color: tomato;
+  /* margin-right: 30px;
+  margin-bottom: 30px; */
 }
 
-/* Убрать правый отступ у 3-го элимента 
+/* Убрать правый отступ у 3-го элимента */
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
 
-*/
-/* Всем которые не являются 3-ми */
+/* Убрать нижний отступ последни 3-м  */
+/* .flex-element:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+} */
+
+/* Всем которые не являются 3-ми 
 .flex-element:not(:nth-child(3n)) {
   margin-right: 30px;
 }
-/* Всем кроме последних 3-х */
+ Всем кроме последних 3-х 
 .flex-element:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
 }
+*/
