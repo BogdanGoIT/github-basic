@@ -87,6 +87,16 @@
   margin-bottom: 32px;
 }
 
+/*  Внутри work-list выбири все нечетные item, и внутри них примини стили к content */
+.work-list > .item:nth-child(2n + 1) > .content {
+  margin-left: 84px;
+}
+
+/*  Внутри work-list выбири все четные item, и внутри них примини стили к content */
+.work-list > .item:nth-child(2n) > .content {
+  margin-right: 84px;
+}
+
 /* Примеры работ work */
 
 .section.no-padding {
@@ -98,11 +108,15 @@
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: var(--primary-white-color);
+
+  display: flex;
+  align-items: center;
 }
 
 /* Красим ченые элименты */
 .work-list > .item:nth-child(2n) {
   background-color: var(--secondary-bg-color);
+  flex-direction: row-reverse;
 }
 
 /* Button */
