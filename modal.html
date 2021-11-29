@@ -65,15 +65,32 @@
 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta natus accusamus possimus aliquam deleniti, aliquid quibusdam debitis consectetur tempora omnis quis dolorum enim atque id? Beatae ipsam voluptates aperiam alias.</p>
 
-    <button>Открыть модалку</button>
+    <button data-modal-open>Открыть модалку</button>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque aliquam praesentium nulla dicta nam esse natus! Corrupti ut voluptas enim minus quos, quam et omnis hic culpa, expedita, illo nostrum?</p>
 
-    <div class="backgroup is-hidden">
+    <div class="backgroup is-hidden"  data-modal>
         <div class="modal">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, aliquid laborum eveniet debitis deserunt incidunt fuga labore, atque expedita quas nobis delectus magnam eligendi impedit, natus modi? Ipsum, tenetur non.</p>
-            <button>Закрыть</button>
+            <button data-modal-close>Закрыть</button>
         </div>
     </div>
+
+<script>
+    (() => {
+    const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    modal: document.querySelector('[data-modal]'),
+    };
+    
+    refs.openModalBtn.addEventListener('click', toggleModal);
+    refs.closeModalBtn.addEventListener('click', toggleModal);
+    
+    function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    }
+    })();
+</script>
 </body>
 </html>
