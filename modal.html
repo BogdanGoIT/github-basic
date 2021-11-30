@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/madal.css">
 </head>
 <body>
+
     <a href="index.html">На главную</a>
 
 
@@ -92,5 +93,81 @@
     }
     })();
 </script>
+
+
+
+
+
+
+<form autocomplete="off">
+    <div class="form-field">
+    <label for="name" >Имя</label>
+    <input type="text" name="user-name" id="name" placeholder="Иван Иваныч">
+    </div>
+
+    <div class="form-field">
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel">
+    </div>    
+
+    <div class="form-field">
+    <label for="mail">Email</label>
+    <input type="email" name="mail" id="mail">
+    </div>
+
+    <div role="group" class="group">
+        <h2 class="group-title">Тема доклада</h2>
+        <ul class="topic-options">
+            <li>
+                <input type="checkbox" name="topic" value="html" id="html">
+                <label for="html">HTML</label>
+            </li>
+            <li>
+                <input type="checkbox" name="topic" value="html" id="css">
+                <label for="css">CSS</label>
+            </li>
+            <li>
+                <input type="checkbox" name="topic" value="js" id="js">
+                <label for="js">JavaScript</label>
+            </li>
+        </ul>
+    </div>
+
+    <div role="group" class="group">
+
+        <h2 class="group-title">Уровень вашей экспертизы</h2>
+
+        <ul class="experince-options">
+            <li>
+                <input type="radio" name="experience" value="junior" id="junior"><label for="junior">Junior</label>
+            </li>
+            <li>
+                <input type="radio" name="experience" value="middle" id="middle"><label for="middle">Middle</label>
+            </li>
+            <li><input type="radio" name="experience" value="senior" id="senior"><label for="senior">Senior</label>
+            </li>
+        </ul>    
+
+    </div>
+    <div class="form-field">
+        <label for="date">Дата доклада</label>
+        <input type="datetime-local" name="date" id="date" class="date">
+    </div>
+
+    <div class="form-field">
+        <label for="pdf">Загрузить pdf</label>
+        <input type="file" name="file" id="pdf">
+    </div>
+
+    <div class="form-field">
+        <label for="coment">Оставьте комментарий</label>
+        <textarea class="comment" name="coment" id="coment" rows="10" placeholder="Оставить комментарий"></textarea>
+    </div>
+
+<button type="submit">Отправить</button>
+
+</form>
+
+
 </body>
 </html>
