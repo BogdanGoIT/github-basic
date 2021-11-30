@@ -216,6 +216,7 @@ form {
   border-radius: 3px;
   border: 1px solid #2a2a2a;
   font-size: 16px;
+  outline: 0;
 }
 
 .group {
@@ -261,4 +262,52 @@ form .date {
 
 .comment {
   padding: 8px;
+}
+
+.content-circle {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+
+  /* animation-name: blue-circle;
+  animation-duration: 2500ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; */
+
+  animation: blue-circle 2500ms linear infinite alternate 1s forwards,
+    red-circle 3500ms ease infinite alternate 1s forwards;
+}
+
+.content:hover .content-circle {
+  animation-play-state: paused;
+}
+
+@keyframes blue-circle {
+  0% {
+    left: 0;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  100% {
+    left: 500px;
+  }
+}
+
+@keyframes red-circle {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    background-color: yellowgreen;
+  }
 }
