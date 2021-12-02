@@ -189,80 +189,63 @@ textarea {
   resize: none;
 }
 
-form {
-  outline: 1px solid red;
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.form {
   padding: 20px;
+  margin: 20px;
+  width: 600px;
 }
 
 .form-field {
   /* outline: 1px solid blue; */
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
+  position: relative;
 }
 
-.form-field label {
-  margin-bottom: 5px;
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
 }
 
-.form-field input {
-  /* Сделать по вертикали
- width: 100%; */
+.form-input {
+  /* Сделать по вертикали */
+  width: 100%;
   margin: 0;
   padding: 10px 20px;
   border-radius: 3px;
   border: 1px solid #2a2a2a;
-  font-size: 16px;
-  outline: 0;
 }
 
-.group {
-  margin-bottom: 20px;
+/* когда input получает focus, мы можем выбрать label который идет после input который сейчас в фокусе, мы хотим выбрать form-label когда у input не показан placeholder */
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  color: tomato;
+  transform: translateY(-50px);
 }
 
-.group-title {
-  margin-top: 0;
-  margin-bottom: 10px;
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
 }
 
-.topic-options,
-.experince-options {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.form-input:focus ~ .icon {
+  background-color: blue;
 }
 
-.topic-options li {
-  display: flex;
-  align-items: center;
-}
-
-.topic-options input[type='checkbox'] {
-  /* width: 40px;
-  height: 40px; */
-}
-
-.topic-options label {
-  font-size: 20px;
-  margin-left: 10px;
-}
-
-form .date {
-  border-color: red;
-  border-width: 5px;
-  border-radius: 4px;
-  padding: 20px 40px;
-  color: green;
-  font-size: 40px;
-  background-color: orange;
-}
-
-.comment {
-  padding: 8px;
-}
+/* Когда placeholder показывается */
+/* .form-input:placeholder-shown {
+  background-color: red;
+} */
 
 .content-circle {
   width: 100px;
