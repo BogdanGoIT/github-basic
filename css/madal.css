@@ -237,10 +237,10 @@ textarea {
   height: 20px;
   background-color: tomato;
 }
-
+/* 
 .form-input:focus ~ .icon {
   background-color: blue;
-}
+} */
 
 /* Когда placeholder показывается */
 /* .form-input:placeholder-shown {
@@ -336,6 +336,61 @@ textarea {
   background-color: tomato;
 }
 
+/* .form-field:focus-within > .icon {
+  background-color: blue;
+}
+
+.form-field:focus-within > .form-label {
+  transform: translateY(-50px);
+}
+
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translateY(-50px);
+} */
+
+.form {
+  padding: 20px;
+  margin: 20px;
+}
+
+.form-field {
+  /* outline: 1px solid blue; */
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
+}
+
+.form-input {
+  /* Сделать по вертикали */
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 1px solid #2a2a2a;
+  padding-left: 40px;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: tomato;
+}
+
 .form-field:focus-within > .icon {
   background-color: blue;
 }
@@ -344,6 +399,7 @@ textarea {
   transform: translateY(-50px);
 }
 
+/* Когда у тебя не показывается placeholder возьми за тобой следующий .form-label и примини ему стили */
 .form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-50px);
 }
